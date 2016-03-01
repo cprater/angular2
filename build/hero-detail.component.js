@@ -32,6 +32,7 @@ System.register(['angular2/core', 'angular2/router', './hero.service'], function
                 HeroDetailComponent.prototype.ngOnInit = function () {
                     var _this = this;
                     var id = +this._routeParams.get('id');
+                    String(id);
                     this._heroService.getHero(id)
                         .then(function (hero) {
                         _this.hero = hero;

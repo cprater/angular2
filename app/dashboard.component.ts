@@ -5,7 +5,7 @@ import {HeroService} from './hero.service';
 
 @Component({
   selector: 'my-dashboard',
-  templateUrl: 'app/dashboard.component.html',
+  templateUrl: 'app/templates/dashboard.component.html',
 })
 
 export class DashboardComponent implements OnInit {
@@ -13,7 +13,7 @@ export class DashboardComponent implements OnInit {
 
   constructor(
     private _heroService: HeroService,
-    private _router: Router,
+    private _router: Router
   ) {}
 
   ngOnInit() {

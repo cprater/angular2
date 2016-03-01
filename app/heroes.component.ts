@@ -70,13 +70,14 @@ import {HeroDetailComponent} from './hero-detail.component';
 })
 
 export class HeroesComponent implements OnInit {
-  public heroes:HEROES;
-  public selectedHero: Hero;
+  public heroes:Hero[] = [];
+  public selectedHero:Hero;
 
   constructor(private _heroService: HeroService) { }
 
   onSelect(hero) {
     this.selectedHero = hero;
+    console.log('poop');
     console.log(hero);
   }
 

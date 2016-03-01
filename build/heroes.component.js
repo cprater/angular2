@@ -27,9 +27,11 @@ System.register(['angular2/core', './hero.service', './hero-detail.component'], 
             HeroesComponent = (function () {
                 function HeroesComponent(_heroService) {
                     this._heroService = _heroService;
+                    this.heroes = [];
                 }
                 HeroesComponent.prototype.onSelect = function (hero) {
                     this.selectedHero = hero;
+                    console.log('poop');
                     console.log(hero);
                 };
                 HeroesComponent.prototype.ngOnInit = function () {
